@@ -1,0 +1,30 @@
+# Node.js
+node_modules
+dist
+
+# TypeScript
+*.tsbuildinfo
+
+# Solana Wallet
+dev-wallet.json
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# macOS
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+*.env
+.idea
+.vscode
