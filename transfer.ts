@@ -6,7 +6,7 @@ import wallet from "./dev-wallet.json"
 const from = Keypair.fromSecretKey(new Uint8Array(wallet));
 
 // Define Second Account Public Key
-const to = new PublicKey("4CpDWfNTnpbqoo6M8fEvrHqaE53vpPvwgxtuotwA9Sj5");
+const to = new PublicKey("your public key");
 //Create a Solana devnet connection
 const connection = new Connection("https://api.devnet.solana.com");
 
