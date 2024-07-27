@@ -3,29 +3,20 @@ export type WbaPrereq = {
     name: "wba_prereq";
     instructions: [
       {
-        name: "initialize";
+        name: "complete";
         accounts: [
           {
-            name: "initializer";
+            name: "signer";
             isMut: true;
             isSigner: true;
           }
         ];
-        args: [];
-      }
-    ];
-    accounts: [
-      {
-        name: "initializerAccount";
-        type: {
-          kind: "struct";
-          fields: [
-            {
-              name: "initializer";
-              type: "publicKey";
-            }
-          ];
-        };
+        args: [
+          {
+            name: "github";
+            type: "bytes";
+          }
+        ];
       }
     ];
   };
@@ -35,29 +26,20 @@ export type WbaPrereq = {
     name: "wba_prereq",
     instructions: [
       {
-        name: "initialize",
+        name: "complete",
         accounts: [
           {
-            name: "initializer",
+            name: "signer",
             isMut: true,
             isSigner: true
           }
         ],
-        args: []
-      }
-    ],
-    accounts: [
-      {
-        name: "initializerAccount",
-        type: {
-          kind: "struct",
-          fields: [
-            {
-              name: "initializer",
-              type: "publicKey"
-            }
-          ]
-        }
+        args: [
+          {
+            name: "github",
+            type: "bytes"
+          }
+        ]
       }
     ]
   };
